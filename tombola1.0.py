@@ -46,7 +46,7 @@ class Regolamento(object):
         Tabellone.num_cartelle = int(b)
         for c in range(int(a)):
             nome = input("Inserisci nome del giocatore %d: " % (c))
-            print(nome)
+            #print(nome)
             Tabellone.nome_giocarore.append(nome)
         for player in range(Tabellone.giocatori):
             gio_carte = []
