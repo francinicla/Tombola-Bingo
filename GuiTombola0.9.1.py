@@ -154,7 +154,7 @@ class Game():
             Label(cards, text='Nome giocatore:%s' % (name_play[pos_gio])).grid(row=0+posy,column=1+posx,columnspan=10)
             posy += 1
             for pos_card in range(play_cards[1]):
-                Label(cards, text='Numero cartella:%s' % (pos_card)).grid(row=0+posy,column=1+posx,columnspan=10)
+                Label(cards, text='Numero cartella:%s' % (pos_card+1)).grid(row=0+posy,column=1+posx,columnspan=10)
                 Label(cards, text='    ').grid(row=0+posy,column=0+posx)
                 tupla_card = car.genera_cartella()
                 elen_tuple += tupla_card,
