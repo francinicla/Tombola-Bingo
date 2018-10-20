@@ -219,26 +219,26 @@ class Game():
                     gi = cartel // Board.players_cards[1]
                     if Board.win == 0:
                         if n == 2:
-                            tombo = messagebox.showinfo(title="AMBO!!!", message="\nIL GIOCATORE %s \nCON LA CARTELLA %s \nHA FATTO \nAMBO!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]))
+                            tombo = messagebox.showinfo(title="AMBO!!!", message="\nIL GIOCATORE %s \nCON LA CARTELLA %s \nHA FATTO \nAMBO!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]+1))
                             #print("\nIL GIOCATORE %s CON LA CARTELLA %s HA FATTO AMBO!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]))
                             Board.win  = 1
                     if Board.win  == 1:
                         if n == 3:
-                            tombo = messagebox.showinfo(title="TERNA!!!", message="\nIL GIOCATORE %s \nCON LA CARTELLA %s \nHA FATTO \nTERNA!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]))
+                            tombo = messagebox.showinfo(title="TERNA!!!", message="\nIL GIOCATORE %s \nCON LA CARTELLA %s \nHA FATTO \nTERNA!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]+1))
                             #print("\nIL GIOCATORE %s CON LA CARTELLA %s HA FATTO TERNA!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]))
                             Board.win  = 2
                     if Board.win  == 2:
                         if n == 4:
-                            tombo = messagebox.showinfo(title="QUATERNA!!!", message="\nIL GIOCATORE %s \nCON LA CARTELLA %s \nHA FATTO \nQUATERNA!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]))
+                            tombo = messagebox.showinfo(title="QUATERNA!!!", message="\nIL GIOCATORE %s \nCON LA CARTELLA %s \nHA FATTO \nQUATERNA!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]+1))
                             #print("\nIL GIOCATORE %s CON LA CARTELLA %s HA FATTO QUATERNA!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]))
                             Board.win  = 3
                     if Board.win  == 3:
                         if n == 5:
-                            tombo = messagebox.showinfo(title="CINQUINA!!!", message="\nIL GIOCATORE %s \nCON LA CARTELLA %s \nHA FATTO \nCINQUINA!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]))
+                            tombo = messagebox.showinfo(title="CINQUINA!!!", message="\nIL GIOCATORE %s \nCON LA CARTELLA %s \nHA FATTO \nCINQUINA!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]+1))
                             #print("\nIL GIOCATORE %s CON LA CARTELLA %s HA FATTO CINQUINA!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]))
                             Board.win  = 4
                     if tombola == 15:
-                        tombo = messagebox.showinfo(title="TOMBOLA!!!", message="\nIL GIOCATORE %s \nCON LA CARTELLA %s \nHA FATTO \nTOMBOLA!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]))
+                        tombo = messagebox.showinfo(title="TOMBOLA!!!", message="\nIL GIOCATORE %s \nCON LA CARTELLA %s \nHA FATTO \nTOMBOLA!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]+1))
                         #print("\nIL GIOCATORE %s CON LA CARTELLA %s HA FATTO TOMBOLA!!!!!!" % (Board.name_players[gi],cartel % Board.players_cards[1]))
                         exit()
                 cartel +=1
