@@ -360,36 +360,39 @@ class Cartelle():
                 riga += scelto,
                 scelto = int(scelto)
                 if scelto < 10:
-                    for g in range(0, 10):
+                    for g in range(0, 9):
                         mnumeri[g] = ' '
                 if 10 <= scelto < 20:
-                    for g in range(10, 20):
+                    for g in range(9, 19):
                         mnumeri[g] = ' '
                 if 20 <= scelto < 30:
-                    for g in range(20, 30):
+                    for g in range(19, 29):
                         mnumeri[g] = ' '
                 if 30 <= scelto < 40:
-                    for g in range(30, 40):
+                    for g in range(29, 39):
                         mnumeri[g] = ' '
                 if 40 <= scelto < 50:
-                    for g in range(40, 50):
+                    for g in range(39, 49):
                         mnumeri[g] = ' '
                 if 50 <= scelto < 60:
-                    for g in range(50, 60):
+                    for g in range(49, 59):
                         mnumeri[g] = ' '
                 if 60 <= scelto < 70:
-                    for g in range(60, 70):
+                    for g in range(59, 69):
                         mnumeri[g] = ' '
                 if 70 <= scelto < 80:
-                    for g in range(70, 80):
+                    for g in range(69, 79):
                         mnumeri[g] = ' '
                 if 80 <= scelto <= 90:
-                    for g in range(80, 90):
+                    for g in range(79, 90):
                         mnumeri[g] = ' '
                 riduci = scelto - 1
+                #print(mnumeri)
                 cmatrice[riduci] = ' '
+                #print(cmatrice)
                 riga.sort()
             tupla_cartella += ((riga),)
+        print(tupla_cartella)
         return tupla_cartella
 
 
