@@ -33,6 +33,7 @@ class Board:
 
     """Creazione del tabellone."""
 
+    """Inizializzazione montepremi"""
     win = 0
     player_num = 0
     montepremi = [0, 0, 0, 0, 0]
