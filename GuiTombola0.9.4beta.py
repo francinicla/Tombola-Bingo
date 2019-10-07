@@ -173,7 +173,7 @@ class Game:
         premio.geometry("+500+150")
         premio.title('Monte premi')
         mpremi = Board.montepremi[0]
-        Label(premio, text='Elenco premi', font="Helvetica 10 bold").grid(padx=10, pady=10)
+        Label(premio, text='Suddivisione elenco premi', font="Helvetica 10 bold").grid(padx=10, pady=10)
         Label(premio, text='Ambo = %2d' % (mpremi * 5 / 100), font="Helvetica 10").grid(padx=10)
         Label(premio, text='Terna = %2d' % (mpremi * 12.5 / 100), font="Helvetica 10").grid(padx=10)
         Label(premio, text='Quaterna = %2d' % (mpremi * 20 / 100), font="Helvetica 10").grid(padx=10)
