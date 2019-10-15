@@ -201,7 +201,7 @@ class Cards(object):
 
 class Numbers(object):
     num_chosen = []
-    """Creazione sacchetto dei Numbers."""
+    """Generate bag of numbers."""
     def __init__(self):
         self.draw = Numbers.num_chosen
         for i in range(1, 91):
@@ -210,7 +210,7 @@ class Numbers(object):
 
 
     def draw_num(self):
-        """Pesca un number e lo elimina dalla lista bingo"""
+        """Pitch a number e clear him from the list"""
         self.number = Numbers.num_chosen
         self.mischia = random.shuffle(self.number)
         self.chosen = self.number[0]
