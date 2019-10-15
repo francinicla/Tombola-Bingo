@@ -197,7 +197,7 @@ class Game:
         posy = 0
         posz = 2
         for pos_gio in range(play_cards[0]):
-            Label(cards, text='Nome giocatore:%s - Premi Vinti:%d' % (name_play[pos_gio], Board.montepremi[pos_gio +1])).grid(row=0 + posy, column=1 + posx,
+            Label(cards, text='Giocatore:%s - Premi Vinti:%d' % (name_play[pos_gio], Board.montepremi[pos_gio +1])).grid(row=0 + posy, column=1 + posx,
                                                                                columnspan=10)
             posy += 1
             for pos_card in range(play_cards[1]):
